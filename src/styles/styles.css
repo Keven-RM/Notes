@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 30px auto;
+    padding: 10px;
+    width: 500px;
+    height: 90px;
+}
+
+section form{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+section form input{
+    height: 34px;
+    width: 300px;
+    font-size: 15px;
+    outline: none;
+}
+
+section form .new-note{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: none;
+
+    font-family: 'Roboto', sans-serif;
+    background: #494949;
+    
+    color: white;
+    border: none;
+}
+
+section form .new-note:hover{
+    background: #c0c0c0;
+}
+
+section form .new-note:active{
+    background: #949494;
+}
+
+ul{
+    padding: 0px 10vw;
+}
+
+li{
+    background-color: #ffb71d;
+    width: 300px;
+    min-height: 320px;
+
+    display: inline-flex;
+    flex-direction: column;
+    margin: 20px;
+
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+li header{
+    height: 50px;
+    padding: 0px 15px;
+    background: #00000009;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+li header button{        
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    
+    font-size: 20px;
+    opacity: 0.1;
+}
+
+li header button:hover{
+    opacity: 1;
+    transition: 300ms;
+}
+
+li p{
+    margin: 5px 20px 10px;
+    font-size: 18pt;
+    font-family: 'Architects Daughter', sans-serif;
+    align-items: flex-end;
+}
